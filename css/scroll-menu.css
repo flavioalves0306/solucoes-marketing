@@ -1,0 +1,20 @@
+
+/* Animação no Scroll da Página*/
+
+.container_scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color: var(--card);
+    padding: 0 1.87rem;
+    position: fixed;
+    transition: all .4s;
+}
+
+.logo_scroll {
+    width: 5rem;
+    height: 3rem;
+    transition: .4s;
+}
