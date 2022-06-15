@@ -44,6 +44,10 @@ a {
     gap: 2.5rem;
 }
 
+.menu-burguer {
+    display: none;
+}
+
 .menu li a {
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;

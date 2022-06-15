@@ -1,5 +1,5 @@
 
-// Efeito do Menu no Scroll da Página//
+// Animação do Menu no Scroll da Página//
 
 $(function() {
     $(window).on("scroll", function(){
