@@ -5,8 +5,6 @@
     --cor-tercearia: #181F56;
 }
 
-
-
 @media screen and (max-width: 730px) {
     
     .logo {
@@ -21,7 +19,8 @@
     .menu-burguer {
         display: block;
         background-color: transparent;
-        font-size: 30px;
+        width: 25px;
+        height: auto;
         border: none;
         cursor: pointer;
     }
@@ -57,7 +56,7 @@
  
     .mobile-menu .mobile-itens li a {
         color: var(--cor-secundaria); 
-        transition: .4s; 
+        transition: .2s; 
     }
 
     .mobile-menu .mobile-itens li a:hover {
@@ -70,27 +69,74 @@
         -webkit-animation: slide-menu 1s;
     }
 
-    @keyframes slide-menu {
-        from {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0px);
-            opacity: 1;
-        }
+@media screen and (max-width: 450px)  {
+    
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
-    @-webkit-keyframes slide-menu {
-        from {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0px);
-            opacity: 1;
-        }
+    .container {
+        position: absolute;
     }
+    
+    .mobile-menu {
+        position: absolute;
+        margin-top: 100px;
+        display: none;
+        width: 100%;
+    }
+   
+    .mobile-menu .mobile-itens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .mobile-menu .mobile-itens li {
+        font-size: 1.1rem;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--cor-primaria);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .open {
+        display: block;
+        animation: slide-menu 1s;
+        -webkit-animation: slide-menu 1s;
+    }
+}
+
+@keyframes slide-menu {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-menu {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 }
