@@ -41,7 +41,6 @@
     }
 
     .mobile-menu .mobile-itens li {
-        font-size: 1.1rem;
         font-family: 'Poppins', sans-serif;
         padding: 10px 0;
         width: 100%;
@@ -53,10 +52,18 @@
         background-color: #f06b1e;
         transition: all .4s;
      }
+
+    .mobile-menu .mobile-itens li button {
+        background-color: transparent;
+        border: none;
+    }
  
-    .mobile-menu .mobile-itens li a {
+    .mobile-menu .mobile-itens li button a {
         color: var(--cor-secundaria); 
+        font-size: 1.1rem;
+        width: 100%;
         transition: .2s; 
+
     }
 
     .mobile-menu .mobile-itens li a:hover {
