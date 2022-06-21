@@ -15,3 +15,5 @@ function menuClose() {
   menuMobile.classList.remove("open");
   document.querySelector(".icon").src = "./img/bars-solid.svg";
 }
+
+// Abrir/Fechar Menu //
