@@ -1,19 +1,22 @@
 // Abrir/Fechar Menu //
 
-let menuMobile = document.querySelector(".mobile-menu");
+const $menuMobile = $('.mobile-menu');
+const $icon = $('.icon');
 
 function menuShow() {
-  if (menuMobile.classList.contains("open")) {
+  console.log($menuMobile.attr('class'));
+  if ($menuMobile.attr('class') === 'open') {
     menuClose();
-  } else {
-    menuMobile.classList.add("open");
-    document.querySelector(".icon").src = "./img/xmark-solid.svg";
+    return;
   }
+  console.log($icon.attr('src'));
+  $menuMobile.addClass('open');
+  $icon.attr('src', './img/xmark-solid.svg');
 }
 
 function menuClose() {
-  menuMobile.classList.remove("open");
-  document.querySelector(".icon").src = "./img/bars-solid.svg";
+  $menuMobile.removeClass('open');
+  $icon.attr('src', './img/bars-solid.svg');
 }
 
 // Abrir/Fechar Menu //
