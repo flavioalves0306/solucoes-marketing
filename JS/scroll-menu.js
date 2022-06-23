@@ -3,7 +3,7 @@
 
 $(function() {
     $(window).on("scroll", function(){
-        if ($(window).scrollTop() > 768) {
+        if ($(window).scrollTop() > 600) {
             $(".container").addClass("container_scroll");
             $(".logo").addClass("logo_scroll");
         } else {
