@@ -19,7 +19,7 @@
     .menu-burguer {
         display: block;
         background-color: transparent;
-        width: 25px;
+        width: 22px;
         height: auto;
         border: none;
         cursor: pointer;
@@ -138,7 +138,7 @@
 
 @-webkit-keyframes slide-menu {
     from {
-        transform: translateY(-100px);
+        transform: translateY(-50px);
         opacity: 0;
     }
 
